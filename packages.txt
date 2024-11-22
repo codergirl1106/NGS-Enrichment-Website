@@ -6,5 +6,3 @@ libcurl4-openssl-dev
 libssl-dev
 libxml2-dev
 build-essential
-
-./install_r_packages.sh
