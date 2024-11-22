@@ -1,8 +1,7 @@
 r-base
 r-base-dev
 r-cran-biocmanager
-
-libcurl4-openssl-dev
-libssl-dev
-libxml2-dev
-build-essential
+r-cran-data.table
+r-cran-stringr
+r-cran-tibble
+r-cran-dplyr
