@@ -1,3 +1,10 @@
 r-base
 r-base-dev
 r-cran-biocmanager
+
+libcurl4-openssl-dev
+libssl-dev
+libxml2-dev
+build-essential
+
+./install_r_packages.sh
