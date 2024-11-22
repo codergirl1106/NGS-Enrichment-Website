@@ -1,8 +1,3 @@
-options(repos = c(CRAN = "https://cloud.r-project.org/"))
-
-BiocManager::install("Biostrings")
-BiocManager::install("Rfastp")
-
 library(Biostrings)
 library(Rfastp)
 library(ggplot2)
