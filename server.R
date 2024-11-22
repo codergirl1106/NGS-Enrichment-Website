@@ -1,5 +1,5 @@
-library(S4Vectors, lib.loc="./R")
 library(BiocGenerics, lib.loc="./R")
+library(S4Vectors, lib.loc="./R")
 library(Biostrings, lib.loc="./R")
 library(Rfastp, lib.loc="./R")
 library(ggplot2)
