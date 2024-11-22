@@ -86,10 +86,14 @@ def main():
 
         dna_dist = px.histogram(dna_distribution, x="Length of Merged DNA Sequences (bp)", y="Counts", nbins=100)
 
+        st.markdown("***DNA Sequences Data***")
+        st.markdown("---")
         dna_dist
         
         st.dataframe(dna_seq)
 
+        st.markdown("***Amino Acid Sequences Data***")
+        st.markdown("---")
         amino_dist = px.histogram(amino_acid_distribution, x="Length of Amino Acid Sequences", y="Counts", nbins=100)
 
         amino_dist
