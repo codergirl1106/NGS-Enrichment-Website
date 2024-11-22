@@ -1,3 +1,4 @@
+library(BiocGenerics, lib.loc="./R")
 library(Biostrings, lib.loc="./R")
 library(Rfastp, lib.loc="./R")
 library(ggplot2)
