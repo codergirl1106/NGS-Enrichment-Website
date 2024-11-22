@@ -1,8 +1,4 @@
-print("HIIIIIIII")
-
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
-
-install.packages("BiocManager")
 
 BiocManager::install("Biostrings")
 BiocManager::install("Rfastp")
