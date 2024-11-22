@@ -1,5 +1,5 @@
-library(Biostrings)
-library(Rfastp)
+library(Biostrings, lib.loc="./R")
+library(Rfastp, lib.loc="./R")
 library(ggplot2)
 library(data.table)
 library(stringr)
