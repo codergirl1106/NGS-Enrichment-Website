@@ -29,7 +29,7 @@ def load_data(r1_fastq, r2_fastq, primes):
 
     print("hi")
     
-    process = subprocess.run("uname -m; file ./hello; ./hello server.R", capture_output=True, shell=True)
+    process = subprocess.run("uname -a; uname -m; file ./hello; ./hello server.R", capture_output=True, shell=True)
     print(process)
     result = process.stdout.decode()
     print(result)
