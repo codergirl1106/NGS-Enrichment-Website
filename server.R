@@ -1,3 +1,5 @@
+print(sessionInfo())
+
 library(BiocGenerics, lib.loc="./R")
 library(stats4, lib.loc="./R")
 library(S4Vectors, lib.loc="./R")
