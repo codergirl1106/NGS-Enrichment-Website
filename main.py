@@ -28,12 +28,10 @@ def load_data(r1_fastq, r2_fastq, primes):
         w.write(primes)
 
     print("hi")
-    os.chmod("./hello", os.stat("./hello").st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
-    
-    process = subprocess.Popen(["./hello", "server.R"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+    process = subprocess.run("chmod 755 ./hello; ./hello server.R", capture_output=True, shell=True)
     print(process)
-    result = process.communicate()
-    print(result)
+    result = process.stdout.decode()
 
 def main():
     st.title("NGS Enrichment Website\n")
