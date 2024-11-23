@@ -26,7 +26,7 @@ def load_data(r1_fastq, r2_fastq, primes):
         w.write(primes)
 
     print("hi")
-    process = subprocess.Popen(["Rscript", "server.R"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    process = subprocess.Popen(["./hello", "server.R"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     print(process)
     result = process.communicate()
     print(result)
