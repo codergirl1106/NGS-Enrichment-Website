@@ -1,6 +1,0 @@
-catfastq                Concatenate Fastq Files.
-curvePlot               Plot of Base Quality and GC Content.
-qcSummary               Summary of Fastq Quality Control
-rfastp                  R wrap of fastp
-trimSummary             Summary of Fastq adapter and low quality
-                        trimming
