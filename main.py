@@ -28,9 +28,8 @@ def load_data(r1_fastq, r2_fastq, primes):
         w.write(primes)
 
     print("hi")
-
-    # chmod +x ./hello; 
-    process = subprocess.run("./hello server.R", capture_output=True, shell=True)
+    
+    process = subprocess.run("chmod +x hello; hello server.R", capture_output=True, shell=True)
     print(process)
     result = process.stdout.decode()
     print(result)
