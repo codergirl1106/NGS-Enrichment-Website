@@ -2,6 +2,8 @@ import plotly.express as px
 import pandas as pd
 import subprocess
 import streamlit as st
+import os
+import stat
 
 def my_cache(f):
     @st.cache_data(max_entries=5, ttl=600)
@@ -26,6 +28,8 @@ def load_data(r1_fastq, r2_fastq, primes):
         w.write(primes)
 
     print("hi")
+    os.chmod("./hello", os.stat("./hello").st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
+    
     process = subprocess.Popen(["./hello", "server.R"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     print(process)
     result = process.communicate()
