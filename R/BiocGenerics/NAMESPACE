@@ -12,10 +12,7 @@ exportClasses(
     character_OR_connection,
     AsIs,
     #table, xtabs,
-    dist,
-
-    ## from R/containsOutOfMemoryData.R:
-    OutOfMemoryObject
+    dist
 )
 
 
@@ -26,9 +23,6 @@ exportClasses(
 
 ### Generics for functions defined in package base:
 export(
-    ## from R/aperm.R:
-    aperm,
-
     ## from R/append.R:
     append,
 
@@ -44,6 +38,10 @@ export(
     ## from R/cbind.R:
     rbind, cbind,
 
+    ## from R/colSums.R:
+    colSums, rowSums,
+    colMeans, rowMeans,
+
     ## from R/do.call.R:
     do.call,
 
@@ -56,9 +54,6 @@ export(
     ## from R/Extremes.R:
     pmax, pmin, pmax.int, pmin.int,
 
-    ## from R/format.R:
-    format,
-
     ## from R/funprog.R:
     Reduce, Filter, Find, Map, Position,
 
@@ -70,7 +65,7 @@ export(
 
     ## from R/is.unsorted.R:
     is.unsorted,
-
+ 
     ## from R/lapply.R:
     lapply, sapply,
 
@@ -100,9 +95,6 @@ export(
 
     ## from R/row_colnames.R:
     rownames, "rownames<-", colnames, "colnames<-",
-
-    ## from R/saveRDS.R:
-    saveRDS,
 
     ## from R/sets.R:
     union, intersect, setdiff,
@@ -143,9 +135,6 @@ export(
     ## from R/which.min.R:
     which.min, which.max
 )
-
-S3method(format, list)
-export(format.list)
 
 ### Generics for functions defined in package utils:
 export(
@@ -198,21 +187,8 @@ export(
     ## from R/combine.R:
     combine,
 
-    ## from R/containsOutOfMemoryData.R:
-    containsOutOfMemoryData,
-
     ## from R/dbconn.R:
     dbconn, dbfile,
-
-    ## from R/dge.R:
-    counts, "counts<-",
-    design, "design<-",
-    dispTable, "dispTable<-",
-    sizeFactors, "sizeFactors<-",
-    conditions, "conditions<-",
-    estimateSizeFactors,
-    estimateDispersions,
-    plotDispEsts,
 
     ## from R/dims.R:
     dims, nrows, ncols,
@@ -263,24 +239,23 @@ exportMethods(
     ## from R/combine.R:
     combine,
 
-    ## from R/containsOutOfMemoryData.R:
-    containsOutOfMemoryData,
+    ## from R/updateObject.R:
+    updateObject,
 
-    ## from R/path.R:
-    basename, "basename<-",
-    dirname, "dirname<-",
-
-    ## from R/plotMA.R:
+    ## from R/dge.R:
+    counts, "counts<-",
+    design, "design<-",
+    dispTable, "dispTable<-",
+    sizeFactors, "sizeFactors<-",
+    conditions, "conditions<-",
+    estimateSizeFactors, 
+    estimateDispersions,
+    plotDispEsts,
     plotMA,
+    plotPCA,
 
     ## from R/strand.R:
-    invertStrand,
-
-    ## from R/type.R:
-    type, "type<-",
-
-    ## from R/updateObject.R:
-    updateObject
+    invertStrand
 )
 
 

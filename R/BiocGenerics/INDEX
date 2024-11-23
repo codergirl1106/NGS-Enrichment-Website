@@ -5,21 +5,19 @@ Ontology                Generic Ontology getter
 S3-classes-as-S4-classes
                         S3 classes as S4 classes
 annotation              Accessing annotation information
-aperm                   Transposing an array-like object
 append                  Append elements to a vector-like object
 as.data.frame           Coerce to a data frame
 as.list                 Coerce to a list
 as.vector               Coerce an object into a vector
 boxplot                 Box plots
 cbind                   Combine objects by rows or columns
+colSums                 Form Row and Column Sums and Means
 combine                 Combining or merging different Bioconductor
                         data structures
-containsOutOfMemoryData
-                        Does an object contain out-of-memory data?
+conditions              Accessors and generic functions used in the
+                        context of count datasets
 dbconn                  Accessing SQLite DB information
 density                 Kernel density estimation
-dge                     Accessors and generic functions used in the
-                        context of count datasets
 dims                    Get the dimensions of each element of a
                         list-like object
 do.call                 Execute a function call
@@ -27,7 +25,6 @@ duplicated              Determine duplicate elements
 eval                    Evaluate an (unevaluated) expression
 evalq                   Evaluate an (unevaluated) expression
 fileName                Accessing the file name of an object
-format                  Format an R object for pretty printing
 funprog                 Common higher-order functions in functional
                         programming languages
 get                     Return the value of a named object
@@ -56,7 +53,6 @@ relist                  Re-listing an unlist()ed object
 rep.int                 Replicate elements of a vector-like object
 residuals               Extract model residuals
 row+colnames            Row and column names
-saveRDS                 The saveRDS() S4 generic and default method
 score                   Score accessor
 sets                    Set operations
 sort                    Sorting a vector-like object

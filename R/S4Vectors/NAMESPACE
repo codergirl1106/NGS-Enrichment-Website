@@ -24,13 +24,11 @@ exportClasses(
     Vector, vector_OR_Vector,
     Hits, SelfHits, SortedByQueryHits, SortedByQuerySelfHits,
     Rle,
-    integer_OR_raw, Factor,
+    Factor,
     List, list_OR_List,
     SimpleList,
     HitsList, SortedByQueryHitsList,
-    DataFrame, DFrame,
-    DataFrameFactor,
-    TransposedDataFrame,
+    DataFrame, DFrame, TransposedDataFrame,
     Pairs,
     expression_OR_function, FilterRules, FilterMatrix
 )
@@ -48,15 +46,11 @@ S3method(anyDuplicated, Rle)
 
 S3method(as.character, LLint)
 
-S3method(as.data.frame, DataFrame)
 S3method(as.data.frame, Vector)
 S3method(as.data.frame, Hits)
 
 S3method(as.integer, LLint)
 
-S3method(as.list, Rle)
-S3method(as.list, SimpleList)
-S3method(as.list, TransposedDataFrame)
 S3method(as.list, Vector)
 
 S3method(as.logical, LLint)
@@ -73,9 +67,8 @@ S3method(cbind, DataFrame)
 
 S3method(diff, Rle)
 
-S3method(droplevels, Rle)
-S3method(droplevels, Factor)
 S3method(droplevels, List)
+S3method(droplevels, Rle)
 
 S3method(duplicated, Vector)
 S3method(duplicated, DataFrame)
@@ -146,15 +139,11 @@ export(
 
     as.character.LLint,
 
-    as.data.frame.DataFrame,
     as.data.frame.Vector,
     as.data.frame.Hits,
 
     as.integer.LLint,
 
-    as.list.Rle,
-    as.list.SimpleList,
-    as.list.TransposedDataFrame,
     as.list.Vector,
 
     as.logical.LLint,
@@ -172,7 +161,6 @@ export(
     diff.Rle,
 
     droplevels.Rle,
-    droplevels.Factor,
     droplevels.List,
 
     duplicated.Vector,
@@ -243,6 +231,8 @@ exportMethods(
     length, names, "names<-",
     dim, nrow, ncol,
     dimnames, "dimnames<-",
+    rownames, "rownames<-",
+    colnames, "colnames<-",
     is.na, anyNA,
     as.logical, as.integer, as.numeric,
     as.complex, as.character, as.raw, as.factor,
@@ -279,8 +269,6 @@ exportMethods(
     summary,
 
     ## Methods for generics defined in the BiocGenerics package:
-    rownames, "rownames<-",
-    colnames, "colnames<-",
     rbind, cbind,
     lapply, sapply,
     Reduce, Filter,
@@ -304,9 +292,6 @@ export(
 
     ## show-utils.R:
     coolcat,
-    get_showHeadLines, set_showHeadLines,
-    get_showTailLines, set_showTailLines,
-    printAtomicVectorInAGrid,
     cbind_mcols_for_display,
     makePrettyMatrixForCompactPrinting,
     makeClassinfoRowForCompactPrinting,
@@ -314,6 +299,8 @@ export(
     ## utils.R:
     wmsg,
     .Call2,
+    get_showHeadLines, get_showTailLines,
+    printAtomicVectorInAGrid,
 
     ## normarg-utils.R:
     isTRUEorFALSE, isSingleInteger, isSingleNumber, isSingleString,
@@ -373,9 +360,6 @@ export(
 
     ## DataFrame-class.R:
     DataFrame, make_zero_col_DFrame,
-
-    ## DataFrameFactor-class:
-    DataFrameFactor,
 
     ## Pairs-class.R:
     Pairs,

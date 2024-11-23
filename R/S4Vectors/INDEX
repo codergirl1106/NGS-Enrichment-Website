@@ -3,7 +3,6 @@ DataFrame-class         DataFrame objects
 DataFrame-combine       Combine DataFrame objects along their rows or
                         columns, or merge them
 DataFrame-utils         Common operations on DataFrame objects
-DataFrameFactor-class   DataFrameFactor objects
 Factor-class            Factor objects
 FilterMatrix-class      Matrix for Filter Results
 FilterRules-class       Collection of Filter Rules

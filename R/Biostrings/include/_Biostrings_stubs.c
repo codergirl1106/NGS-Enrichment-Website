@@ -51,26 +51,11 @@ DEFINE_CCALLABLE_STUB(char, RNAdecode,
 	(     code)
 )
 
-DEFINE_CCALLABLE_STUB(char, AAencode,
-	(char c),
-	(     c)
-)
-
-DEFINE_CCALLABLE_STUB(char, AAdecode,
-	(char code),
-	(     code)
-)
-
 /*
  * Stubs for callables defined in XStringSet_class.c
  */
 
 DEFINE_CCALLABLE_STUB(int, get_XStringSet_length,
-	(SEXP x),
-	(     x)
-)
-
-DEFINE_CCALLABLE_STUB(SEXP, get_XStringSet_width,
 	(SEXP x),
 	(     x)
 )
@@ -144,17 +129,17 @@ DEFINE_NOVALUE_CCALLABLE_STUB(report_match,
 )
 
 DEFINE_NOVALUE_CCALLABLE_STUB(drop_reported_matches,
-	(void),
+	(),
 	()
 )
 
 DEFINE_CCALLABLE_STUB(int, get_match_count,
-	(void),
+	(),
 	()
 )
 
 DEFINE_CCALLABLE_STUB(SEXP, reported_matches_asSEXP,
-	(void),
+	(),
 	()
 )
 

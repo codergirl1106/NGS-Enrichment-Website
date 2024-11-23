@@ -3,7 +3,6 @@ BiocGenerics-package	BiocGenerics-package
 annotation	annotation
 annotation<-	annotation
 anyDuplicated	duplicated
-aperm	aperm
 append	append
 as.data.frame	as.data.frame
 as.list	as.list
@@ -19,9 +18,10 @@ boxplot	boxplot
 bzfile-class	S3-classes-as-S4-classes
 cbind	cbind
 character_OR_connection-class	S3-classes-as-S4-classes
-class:OutOfMemoryObject	containsOutOfMemoryData
+colMeans	colSums
 colnames	row_colnames
 colnames<-	row_colnames
+colSums	colSums
 combine	combine
 combine,ANY,missing-method	combine
 combine,data.frame,data.frame-method	combine
@@ -29,11 +29,6 @@ combine,matrix,matrix-method	combine
 conditions	dge
 conditions<-	dge
 connection-class	S3-classes-as-S4-classes
-containsOutOfMemoryData	containsOutOfMemoryData
-containsOutOfMemoryData,ANY-method	containsOutOfMemoryData
-containsOutOfMemoryData,environment-method	containsOutOfMemoryData
-containsOutOfMemoryData,list-method	containsOutOfMemoryData
-containsOutOfMemoryData,OutOfMemoryObject-method	containsOutOfMemoryData
 counts	dge
 counts<-	dge
 dbconn	dbconn
@@ -41,7 +36,6 @@ dbfile	dbconn
 density	density
 design	dge
 design<-	dge
-dge	dge
 dims	dims
 dirname	path
 dirname,ANY-method	path
@@ -65,8 +59,6 @@ file-class	S3-classes-as-S4-classes
 fileName	fileName
 Filter	funprog
 Find	funprog
-format	format
-format.list	format
 funprog	funprog
 get	get
 getObjectSlots	updateObject
@@ -99,8 +91,6 @@ order	order
 organism	organism_species
 organism<-	organism_species
 organism_species	organism_species
-OutOfMemoryObject	containsOutOfMemoryData
-OutOfMemoryObject-class	containsOutOfMemoryData
 paste	paste
 path	path
 path<-	path
@@ -109,6 +99,7 @@ plotDispEsts	dge
 plotMA	plotMA
 plotMA,ANY-method	plotMA
 plotPCA	plotPCA
+plotPCA,ANY-method	plotPCA
 pmax	Extremes
 pmax.int	Extremes
 pmin	Extremes
@@ -122,12 +113,12 @@ relist	relist
 rep.int	rep
 residuals	residuals
 row+colnames	row_colnames
+rowMeans	colSums
 rownames	row_colnames
 rownames<-	row_colnames
+rowSums	colSums
 S3-classes-as-S4-classes	S3-classes-as-S4-classes
 sapply	lapply
-saveRDS	saveRDS
-saveRDS,ANY-method	saveRDS
 score	score
 score<-	score
 sd	var
@@ -152,13 +143,7 @@ testPackage	testPackage
 textConnection-class	S3-classes-as-S4-classes
 toTable	toTable
 type	type
-type,array-method	type
-type,data.frame-method	type
-type,factor-method	type
-type,vector-method	type
 type<-	type
-type<-,array-method	type
-type<-,vector-method	type
 union	sets
 unique	unique
 unlist	unlist

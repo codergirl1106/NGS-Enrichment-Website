@@ -5,13 +5,13 @@ knitr::opts_chunk$set(tidy=FALSE, cache=FALSE,
 options(width=100)
 
 ## ----getPackage, eval=FALSE-----------------------------------------------------------------------
-# if (!requireNamespace("BiocManager", quietly = TRUE))
-#     install.packages("BiocManager")
-# BiocManager::install("Rfastp")
+#  if (!requireNamespace("BiocManager", quietly = TRUE))
+#      install.packages("BiocManager")
+#  BiocManager::install("Rfastp")
 
-## ----eval = FALSE---------------------------------------------------------------------------------
-# BiocManager::install("remotes")
-# BiocManager::install("RockefellerUniversity/Rfastp")
+## ---- eval = FALSE--------------------------------------------------------------------------------
+#  BiocManager::install("remotes")
+#  BiocManager::install("RockefellerUniversity/Rfastp")
 
 ## -------------------------------------------------------------------------------------------------
 library(Rfastp)

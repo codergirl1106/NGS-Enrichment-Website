@@ -1,15 +1,24 @@
 AAString-class          AAString objects
 AMINO_ACID_CODE         The Single-Letter Amino Acid Code
+AlignedXStringSet-class
+                        AlignedXStringSet and QualityAlignedXStringSet
+                        objects
 DNAString-class         DNAString objects
 GENETIC_CODE            The Standard Genetic Code and its known
                         variants
 HNF4alpha               Known HNF4alpha binding sequences
 IUPAC_CODE_MAP          The IUPAC Extended Genetic Alphabet
+InDel-class             InDel objects
 MIndex-class            MIndex objects
 MaskedXString-class     MaskedXString objects
 MultipleAlignment-class
                         MultipleAlignment objects
 PDict-class             PDict objects
+PairwiseAlignments-class
+                        PairwiseAlignments,
+                        PairwiseAlignmentsSingleSubject, and
+                        PairwiseAlignmentsSingleSubjectSummary objects
+PairwiseAlignments-io   Write a PairwiseAlignments object to a file
 QualityScaledXStringSet-class
                         QualityScaledBStringSet,
                         QualityScaledDNAStringSet,
@@ -27,6 +36,7 @@ XStringSet-comparison   Comparing and ordering the elements in one or
 XStringSet-io           Read/write an XStringSet object from/to a file
 XStringSetList-class    XStringSetList objects
 XStringViews-class      The XStringViews class
+align-utils             Utility functions related to sequence alignment
 chartr                  Replace letters in a sequence or set of
                         sequences
 detail                  Show (display) detailed object content
@@ -56,16 +66,19 @@ matchPWM                PWM creating, matching, and related utilities
 matchPattern            String searching functions
 matchProbePair          Find "theoretical amplicons" mapped to a probe
                         pair
-matchprobes             (Deprecated) A function to match a query
-                        sequence to the sequences of a set of probes.
+matchprobes             A function to match a query sequence to the
+                        sequences of a set of probes.
 misc                    Some miscellaneous stuff
-moved_to_pwalign        InDel objects
-needwunsQS              (Defunct) Needleman-Wunsch Global Alignment
+needwunsQS              (Deprecated) Needleman-Wunsch Global Alignment
 oligonucleotideFrequency
                         Calculate the frequency of oligonucleotides in
                         a DNA or RNA sequence (and other related
                         functions)
 padAndClip              Pad and clip strings
+pairwiseAlignment       Optimal Pairwise Alignment
+phiX174Phage            Versions of bacteriophage phiX174 complete
+                        genome and sample short reads
+pid                     Percent Sequence Identity
 pmatchPattern           Longest Common Prefix/Suffix/Substring
                         searching functions
 replaceAt               Extract/replace arbitrary substrings from/in a
@@ -73,7 +86,9 @@ replaceAt               Extract/replace arbitrary substrings from/in a
 replaceLetterAt         Replacing letters in a sequence (or set of
                         sequences) at some specified locations
 reverseComplement       Sequence reversing and complementing
-seqinfo                 seqinfo() method for DNAStringSet objects
+seqinfo                 seqinfo method for DNAStringSet objects
+stringDist              String Distance/Alignment Score Matrix
+substitution.matrices   Scoring matrices
 toComplex               Turning a DNA sequence into a vector of complex
                         numbers
 translate               Translating DNA/RNA sequences
