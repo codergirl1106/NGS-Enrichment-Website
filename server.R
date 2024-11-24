@@ -1,6 +1,7 @@
 print(sessionInfo())
 
 .libPaths("./R")
+library(Rcpp)
 library(BiocGenerics)
 library(stats4)
 library(IRanges)
