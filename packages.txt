@@ -5,3 +5,4 @@ r-cran-data.table
 r-cran-stringr
 r-cran-tibble
 r-cran-dplyr
+r-cran-curl
