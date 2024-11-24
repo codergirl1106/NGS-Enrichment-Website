@@ -1,5 +1,3 @@
-print(sessionInfo())
-
 .libPaths("./R")
 library(Rcpp)
 library(BiocGenerics)
@@ -13,8 +11,6 @@ library(data.table)
 library(stringr)
 library(tibble)
 library(dplyr)
-
-print("WHOOOOOO")
 
 merging <- function(file1, file2, out) {
   o <- rfastp(read1 = file1, read2 = file2,
