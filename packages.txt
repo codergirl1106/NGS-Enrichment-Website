@@ -6,4 +6,4 @@ r-cran-stringr
 r-cran-tibble
 r-cran-dplyr
 r-cran-curl
-r-cran-RCurl
+r-cran-rcurl
