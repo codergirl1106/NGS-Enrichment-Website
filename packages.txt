@@ -7,3 +7,4 @@ r-cran-tibble
 r-cran-dplyr
 r-cran-curl
 r-cran-rcurl
+r-cran-reshape2
