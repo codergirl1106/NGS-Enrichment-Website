@@ -12,7 +12,6 @@ library(data.table)
 library(stringr)
 library(tibble)
 library(dplyr)
-library(bslib)
 
 print("WHOOOOOO")
 
