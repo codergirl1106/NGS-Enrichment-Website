@@ -33,11 +33,11 @@ def load_data(r1_fastq, r2_fastq, primes):
 def main():
     st.title("NGS Enrichment Website\n")
     st.markdown("---")
-    st.markdown("***Website Objective***")
+    st.header("***Website Objective***")
     st.markdown('''NGS data analysis of yeast display repertoires is to analyse the diversity of each selection step,
                 and to identify high-affinity binders by quantifying the relative abundance of different protein variants within the population after each selection round.''')
     st.markdown("---")
-    st.markdown("***Parameters***")
+    st.header("***Parameters***")
     st.markdown("R1 and R2 fastq files in .fastq.gz form")
     st.markdown("A .csv file of primers used, i.e:")
 
@@ -55,11 +55,13 @@ def main():
 
     st.dataframe(pd.DataFrame(data))
     st.markdown("---")
-
+    st.header("***Upload Files***")
     r1_fastq = st.file_uploader("upload R1 fastq file")
     r2_fastq = st.file_uploader("upload R2 fastq file")
     primes = st.file_uploader("upload a file containing the PCA Primers")
 
+    st.markdown("---")
+    
     if r1_fastq != None and r2_fastq != None and primes != None:
 
         load_data(r1_fastq, r2_fastq, primes)
@@ -81,8 +83,6 @@ def main():
         amino_acid_distribution = pd.DataFrame(list(amino_acid_occurrence_dict.items()), columns=["Length of Amino Acid Sequences", "Counts"])
 
         dna_dist = px.histogram(dna_distribution, x="Length of Merged DNA Sequences (bp)", y="Counts", nbins=100)
-
-        st.markdown("---")
         
         st.header("***DNA Sequences Data***")
         
