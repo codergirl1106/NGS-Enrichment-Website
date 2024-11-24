@@ -9,4 +9,3 @@ r-cran-curl
 r-cran-rcurl
 r-cran-reshape2
 r-cran-rjson
-r-cran-rcpp
