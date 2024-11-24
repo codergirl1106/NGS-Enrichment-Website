@@ -34,12 +34,12 @@ def main():
     st.title("NGS Enrichment Website\n")
     st.markdown("---")
     st.header("***Website Objective***")
-    st.markdown('''NGS data analysis of yeast display repertoires is to analyse the diversity of each selection step,
+    st.subheader('''NGS data analysis of yeast display repertoires is to analyse the diversity of each selection step,
                 and to identify high-affinity binders by quantifying the relative abundance of different protein variants within the population after each selection round.''')
     st.markdown("---")
     st.header("***Parameters***")
-    st.markdown("R1 and R2 fastq files in .fastq.gz form")
-    st.markdown("A .csv file of primers used, i.e:")
+    st.subheader("R1 and R2 fastq files in .fastq.gz form")
+    st.subheader("A .csv file of primers used, i.e:")
 
     data = [
         {"Primer": "NGS #1", "Fwd Seq": "TCGAAGGCGGAGGGTCGGCTAGC", "Rev Seq": "CTTCGACCTCTTCAGAAATAAGCTTTTGTTCGGATCC"},
