@@ -2,6 +2,7 @@ print(sessionInfo())
 
 library(BiocGenerics, lib.loc="./R")
 library(stats4, lib.loc="./R")
+library(IRanges, lib.loc="./R")
 library(S4Vectors, lib.loc="./R")
 library(Biostrings, lib.loc="./R")
 library(Rfastp, lib.loc="./R")
