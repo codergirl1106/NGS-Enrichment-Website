@@ -33,13 +33,13 @@ def load_data(r1_fastq, r2_fastq, primes):
 def main():
     st.title("NGS Enrichment Website\n")
     st.markdown("---")
-    st.header("***Website Objective***")
-    st.subheader('''NGS data analysis of yeast display repertoires is to analyse the diversity of each selection step,
+    st.header("Website Objective")
+    st.markdown('''NGS data analysis of yeast display repertoires is to analyse the diversity of each selection step,
                 and to identify high-affinity binders by quantifying the relative abundance of different protein variants within the population after each selection round.''')
     st.markdown("---")
-    st.header("***Parameters***")
-    st.subheader("R1 and R2 fastq files in .fastq.gz form")
-    st.subheader("A .csv file of primers used, i.e:")
+    st.header("Parameters")
+    st.markdown("R1 and R2 fastq files in .fastq.gz form")
+    st.markdown("A .csv file of primers used, i.e:")
 
     data = [
         {"Primer": "NGS #1", "Fwd Seq": "TCGAAGGCGGAGGGTCGGCTAGC", "Rev Seq": "CTTCGACCTCTTCAGAAATAAGCTTTTGTTCGGATCC"},
@@ -55,7 +55,7 @@ def main():
 
     st.dataframe(pd.DataFrame(data))
     st.markdown("---")
-    st.header("***Upload Files***")
+    st.header("Upload Files")
     r1_fastq = st.file_uploader("upload R1 fastq file")
     r2_fastq = st.file_uploader("upload R2 fastq file")
     primes = st.file_uploader("upload a file containing the PCA Primers")
