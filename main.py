@@ -55,10 +55,7 @@ def main():
 
     st.dataframe(pd.DataFrame(data))
     st.markdown("---")
-    st.markdown("***Github*** [link](%s)" % "https://github.com/codergirl1106/NGS-Enrichment-Website/")
-    st.markdown("---")
 
-    
     r1_fastq = st.file_uploader("upload R1 fastq file")
     r2_fastq = st.file_uploader("upload R2 fastq file")
     primes = st.file_uploader("upload a file containing the PCA Primers")
@@ -85,14 +82,18 @@ def main():
 
         dna_dist = px.histogram(dna_distribution, x="Length of Merged DNA Sequences (bp)", y="Counts", nbins=100)
 
-        st.markdown("***DNA Sequences Data***")
         st.markdown("---")
+        
+        st.header("***DNA Sequences Data***")
+        
         dna_dist
         
         st.dataframe(dna_seq)
 
-        st.markdown("***Amino Acid Sequences Data***")
         st.markdown("---")
+        
+        st.header("***Amino Acid Sequences Data***")
+        
         amino_dist = px.histogram(amino_acid_distribution, x="Length of Amino Acid Sequences", y="Counts", nbins=100)
 
         amino_dist
