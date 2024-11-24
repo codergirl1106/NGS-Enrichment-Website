@@ -26,13 +26,9 @@ def load_data(r1_fastq, r2_fastq, primes):
 
     with open("./primes.csv", 'wb') as w:
         w.write(primes)
-
-    print("hi")
     
     process = subprocess.run("Rscript ./server.R", capture_output=True, shell=True)
-    print(process)
     result = process.stdout.decode()
-    print(result)
 
 def main():
     st.title("NGS Enrichment Website\n")
