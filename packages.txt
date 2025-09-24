@@ -10,8 +10,6 @@ r-cran-rcurl
 r-cran-reshape2
 r-cran-rjson
 
-libodbc2
-libodbcinst2
 unixodbc
 unixodbc-common
 unixodbc-dev
