@@ -10,7 +10,6 @@ r-cran-rcurl
 r-cran-reshape2
 r-cran-rjson
 
-libgdal32
 unixodbc
 unixodbc-dev
 unixodbc-common
