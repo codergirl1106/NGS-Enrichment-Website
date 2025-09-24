@@ -11,5 +11,4 @@ r-cran-reshape2
 r-cran-rjson
 
 unixodbc
-unixodbc-common
 unixodbc-dev
