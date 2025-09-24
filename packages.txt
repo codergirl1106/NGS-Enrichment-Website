@@ -1,3 +1,5 @@
+apt --fix-broken install
+
 r-base
 r-base-dev
 r-cran-biocmanager
