@@ -11,5 +11,5 @@ r-cran-reshape2
 r-cran-rjson
 
 unixodbc-common
-libodbc
-libodbcinst
+libodbc2
+libodbcinst2
