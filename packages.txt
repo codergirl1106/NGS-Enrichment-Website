@@ -13,4 +13,5 @@ r-cran-rjson
 libodbc2
 libodbcinst2
 unixodbc
+unixodbc-common
 unixodbc-dev
