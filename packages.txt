@@ -1,15 +1,1 @@
 r-base
-r-base-dev
-r-cran-biocmanager
-r-cran-data.table
-r-cran-stringr
-r-cran-tibble
-r-cran-dplyr
-r-cran-curl
-r-cran-rcurl
-r-cran-reshape2
-r-cran-rjson
-
-unixodbc-common
-libodbc2
-libodbcinst2
