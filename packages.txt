@@ -1,4 +1,5 @@
 r-base
+r-base-dev
 r-cran-biocmanager
 r-cran-data.table
 r-cran-stringr
@@ -8,3 +9,8 @@ r-cran-curl
 r-cran-rcurl
 r-cran-reshape2
 r-cran-rjson
+
+libodbc2
+libodbcinst2
+unixodbc
+unixodbc-dev
